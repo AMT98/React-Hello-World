@@ -1,17 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import './style.css';
+import Profile from './Profile';
+import TicTacToe from './Tic-Tac-Toe';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const App = (props) => {
+  return <div className="app">
+    <Profile />
+    <div className="dark-mode">
+      <h1>Dark Mode</h1>
+    </div>
+    <div className="tic-tac-toe">
+      <TicTacToe />
+    </div>
+    <div className="todo">
+      <h1>Todo</h1>
+    </div>
+  </div>
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('app'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
