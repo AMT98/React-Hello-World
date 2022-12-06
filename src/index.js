@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './style.css';
 import Profile from './Profile';
 import TicTacToe from './Tic-Tac-Toe';
+import DarkMode from './DarkMode';
+
 
 const App = (props) => {
   return <div className="app">
     <Profile />
     <div className="dark-mode">
-      <h1>Dark Mode</h1>
+      <DarkMode />
     </div>
     <div className="tic-tac-toe">
       <TicTacToe />
