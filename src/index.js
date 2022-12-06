@@ -4,6 +4,7 @@ import './style.css';
 import Profile from './Profile';
 import TicTacToe from './Tic-Tac-Toe';
 import DarkMode from './DarkMode';
+import Todo from './Todo';
 
 
 const App = (props) => {
@@ -16,7 +17,7 @@ const App = (props) => {
       <TicTacToe />
     </div>
     <div className="todo">
-      <h1>Todo</h1>
+      <Todo />
     </div>
   </div>
 }
